@@ -409,6 +409,40 @@ h3{
     z-index: 2;
 }
 
+.project-box1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 550px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+}
+.project-box1>i{
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+.project-box1 label{
+    font-size: 15px;
+    color: #777;
+}
+.project-box1::after, .contact-info::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+ 
+
 /* ----- CONTACT BOX ----- */
 .contact-info{
     position: relative;
@@ -637,7 +671,6 @@ footer{
     }
 }
 
-  
 .video-row {
     display: flex;
     flex-direction:row;
@@ -652,7 +685,7 @@ footer{
 
 .video {
     width: 500px;
-    height: 250px;
+    height: 425px;
     margin: 0 15px 5px 5px;
     cursor: pointer;
 }
