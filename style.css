@@ -7,7 +7,7 @@
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
+    --text-color-third: rgb(30, 159, 171);    
 
     --first-color: rgb(110, 87, 224);
     --first-color-hover: rgb(40, 91, 212);
@@ -16,6 +16,151 @@
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
+}
+
+.damu{
+    margin-top: 47px;
+   
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Base | Reset - end */
+.chaitu {
+  max-width: 60rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+.card {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  row-gap: 2.5rem;
+  color: #fff;
+  padding-block: 1.625rem;
+  border-top: 1px solid rgb(255 255 255 / 15%);
+}
+.card:last-of-type {
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+}
+.card-number {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color:  #00B5E7;
+}
+.card-title {
+  font-size: clamp(1.125rem, 2.5vw, 2rem);
+  margin-bottom: 1rem;
+  color:#00B5E7;;
+ 
+}
+.card-description {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  line-height: 1.2;
+  color: #b8b7b8;
+}
+.card-image-wrapper {
+  display: none;
+}
+.card-cta {
+  grid-column: 2 / -1;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 3.375rem;
+  padding-inline: 1.6875rem;
+  border: 1px solid  #00B5E7;
+}
+@media (width >= 48em) {
+  .card {
+    grid-template-columns: 0.25fr 1fr 0.5fr;
+    align-items: center;
+    row-gap: 0;
+  }
+  .card-cta {
+    grid-column: initial;
+    margin-left: auto;
+    color: #777;
+  }
+}
+@media (width >= 80em) {
+  .card {
+    position: relative;
+    grid-template-columns: 0.25fr 1fr 1rem 17rem 1.5rem auto;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 120%;
+    height: 100%;
+    background-color:  #00B5E7;;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+  .card:hover::before {
+    opacity: 1;
+  }
+  .card-number,
+  .card-description {
+    transition: color 250ms;
+  }
+  .card:hover .card-number,
+  .card:hover .card-description {
+    color: #fff;
+  }
+
+  .card:hover  .card-title{
+               color: #fff ;
+  }
+  .card-image-wrapper {
+    grid-column: 4 / 5;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    translate: 0 -50%;
+    scale: 0.75;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: scale 1000ms, opacity 250ms, visibility 250ms;
+  }
+  .card:hover .card-image-wrapper {
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+  }
+  .card-cta {
+    grid-column: 6 / -1;
+    transition: background-color 250ms, color 250ms;
+  }
+  .card:hover .card-cta {
+    background-color: #fff;
+    color: #121014;
+  }
+  .card-cta-icon {
+    transition: translate 250ms;
+  }
+  .card-cta:is(:hover, :focus) .card-cta-icon {
+    translate: 3px 0;
+  }
 }
 
 /* ----- BASE ----- */
@@ -51,6 +196,27 @@ html{
 /* ---##-- REUSABLE CSS --##--- */
 
 /* ----- GLOBAL BUTTON DESIGN ----- */
+
+.back-video{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:-1;
+    .fullscreen-video {
+        position: fixed;
+        overflow: hidden;
+        top: 50%;
+        left: 150%;
+        right: 0%;
+        min-width: 190%;
+        min-height: 100%;
+        width:auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -10;
+    }
+}
+
 .btn{
     font-weight: 500;
     padding: 12px 20px;
@@ -76,6 +242,11 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
+    
+    
+    
+
+  
 }
 .container{
     width: 100%;
@@ -94,6 +265,7 @@ nav{
     padding-inline: 9vw;
     transition: .3s;
     z-index: 100;
+    
 }
 .nav-logo{
    position: relative;
@@ -148,6 +320,8 @@ nav{
     border-radius: 50%;
 }
 
+ 
+
 
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
@@ -156,10 +330,14 @@ nav{
 
 /* ----- FEATURED BOX ----- */
 .featured-box{
-    position: relative;
-    display: flex;
+    position:relative;
+
+     width: 100vh;
+     min-width:1400px;
     height: 100vh;
     min-height: 700px;
+  
+   
 }
 
 /* ----- FEATURED TEXT BOX ----- */
@@ -170,7 +348,8 @@ nav{
     align-content: center;
     min-height: 80vh;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    padding-top: 215px;
     padding-left: 20px;
 }
 .featured-text-card span{
@@ -181,19 +360,29 @@ nav{
     border-radius: 5px;
 }
 .featured-name{
-    font-size: 50px;
+    font-size: 58px;
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
+    padding-left: 16%;
 }
 .typedText{
     text-transform: capitalize;
-    color: var(--text-color-third);
+    color: white;
+   
+  
 }
+.mohi{
+    color: white;
+   }
 .featured-text-info{
-    font-size: 15px;
-    margin-bottom: 30px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 70px;
     color: var(--text-color-second);
+    padding-left: 22%;
+    padding-right: 32%;
 }
 .featured-text-btn{
     display: flex;
@@ -235,6 +424,7 @@ nav{
 }
 .image{
     margin: auto 0;
+  margin-right: 115px;
     width: 380px;
     height: 380px;
     border-radius: 55% 45% 55% 45%;
@@ -309,6 +499,8 @@ h3{
 }
 
 /* ----- ABOUT INFO ----- */
+
+
 .about-info{
     position: relative;
     display: flex;
@@ -366,6 +558,7 @@ h3{
     gap: 20px;
     flex-wrap: wrap;
 }
+ 
 .project-box{
     position: relative;
     display: flex;
@@ -409,6 +602,14 @@ h3{
     z-index: 2;
 }
 
+
+.project-container1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .project-box1{
     position: relative;
     display: flex;
@@ -416,7 +617,7 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 30%;
-    height: 550px;
+    height: 554px;
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
