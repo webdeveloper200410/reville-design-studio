@@ -20,6 +20,10 @@
 
 }
 
+
+
+
+
 .damu{
     margin-top: 47px;
    
@@ -83,11 +87,14 @@ a {
   padding-inline: 1.6875rem;
   border: 1px solid  #00B5E7;
 }
-@media (width >= 48em) {
+@media (width >= 18em) {
   .card {
     grid-template-columns: 0.25fr 1fr 0.5fr;
     align-items: center;
-    row-gap: 0;
+    row-gap: 10;
+   
+    font-size: 15px;
+    
   }
   .card-cta {
     grid-column: initial;
@@ -95,7 +102,7 @@ a {
     color: #777;
   }
 }
-@media (width >= 80em) {
+@media (width >= 18em) {
   .card {
     position: relative;
     grid-template-columns: 0.25fr 1fr 1rem 17rem 1.5rem auto;
@@ -204,24 +211,9 @@ html{
     right:0;
     bottom:0;
     z-index:-1;
-    
+ 
 }
 
-
-@media (min-aspect-ratio:16/9){
-    .back-video{
-        width: 100%;
-        height: auto;
-    }
-
-}
-
-@media(max-aspect-ratio:16/9){
-    .back-video{
-        width:100%;
-        height:auto;
-    }
-}
 
 
 
@@ -293,6 +285,7 @@ nav{
 }
 .nav-menu, .nav_menu_list{
     display: flex;
+    
 }
 .nav-menu .nav_list{
     list-style: none;
@@ -349,6 +342,7 @@ nav{
   height: 103vh;
   padding: 0 5%;
   display: flex;
+  
   align-items: center;
   justify-content: center;
   
@@ -408,6 +402,26 @@ nav{
     background: var(--first-color-hover);
 }
 
+.scroll-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+ }
+ .scroll-btn i{
+     font-size: 20px;
+ }
 
 /* ----- MAIN BOX ----- */
 .section{
@@ -712,6 +726,27 @@ footer{
 }
 
 
+
+
+@media  only screen and (min-aspect-ratio:16/9){
+    .back-video{
+        
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and(max-aspect-ratio:16/9){
+    .back-video{
+       
+        width:100%;
+        height:auto;
+    }
+}
+
+ 
+
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
     .featured-text{
@@ -793,11 +828,20 @@ footer{
     .about-info, .contact-info{
         width: 100%;
     }
+
+     
     .project-container{
         justify-content: center;
     }
     .project-box{
         width: 80%;
+    }
+    .project-container1{
+        justify-content: center;
+    }
+    .project-box1{
+        width: 80%;
+        height:90%;
     }
 
 }
@@ -809,6 +853,11 @@ footer{
         font-size: 40px;
     }
     .project-box{
+        width: 100%;
+    }
+
+
+    .project-box1{
         width: 100%;
     }
     .form-inputs{
