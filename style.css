@@ -242,9 +242,7 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
- background: url("img18.png") no-repeat;
-background-size: contain;
-  
+ 
 }
 
  
@@ -739,7 +737,7 @@ footer{
 
 @media only screen and(max-aspect-ratio:16/9){
     .back-video{
-       
+        
         width:100%;
         height:auto;
     }
@@ -760,14 +758,28 @@ footer{
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
+    .container{
+        width: 110%;
+        height: auto;
+        
+        
+    }
+
+.nav-menu{
+     
+}
+  
+   
     .nav-button{
-        display: none;
+        display: none;  
+       
     }
     .nav-menu.responsive{
         left: 0;
     }
     .nav-menu{
         position: fixed;
+       
         top: 80px;
         left: -100%;
         flex-direction: column;
@@ -787,6 +799,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-right: 100px;
     }
     .featured-box{
         flex-direction: column;
@@ -828,8 +841,20 @@ footer{
     .about-info, .contact-info{
         width: 100%;
     }
+        .chaitu{
+            width: 92%;
+        } 
+     .card-description{
+        font-size: 10px;
+     }
+    .card-image-wrapper{
+        padding-right: 20px;
+        width: 75%;
+    }
 
-     
+    .card-number{
+        display: none;
+    }
     .project-container{
         justify-content: center;
     }
@@ -849,6 +874,8 @@ footer{
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
+
+    
     .featured-name{
         font-size: 40px;
     }
