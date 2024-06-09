@@ -758,16 +758,7 @@ footer{
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
-    .container{
-        width: 110%;
-        height: auto;
-        
-        
-    }
 
-.nav-menu{
-     
-}
   
    
     .nav-button{
@@ -775,18 +766,18 @@ footer{
        
     }
     .nav-menu.responsive{
-        left: 0;
+        right: 0;
     }
     .nav-menu{
         position: fixed;
        
         top: 80px;
-        left: -100%;
+        right: -100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(15px);
         width: 100%;
         min-height: 450px;
         height: 90vh;
@@ -799,7 +790,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 100px;
+        padding-right: 160px;
     }
     .featured-box{
         flex-direction: column;
@@ -842,14 +833,16 @@ footer{
         width: 100%;
     }
         .chaitu{
-            width: 92%;
+            width: 90%;
         } 
      .card-description{
         font-size: 10px;
+        display: flex;
+       
      }
     .card-image-wrapper{
-        padding-right: 20px;
-        width: 75%;
+        padding-right: 30px;
+        width: 70%;
     }
 
     .card-number{
@@ -866,7 +859,7 @@ footer{
     }
     .project-box1{
         width: 80%;
-        height:90%;
+        height:80%;
     }
 
 }
