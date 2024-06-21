@@ -741,6 +741,9 @@ footer{
     font-size: 14px;
     margin-top: 10px;
 }
+.nav-name{
+    color: #00B5E7;
+}
 
 
 
@@ -776,18 +779,23 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
    
-  
+  body{
+    background-color: black;
+  }
     .nav-button{
         display: none; 
      
        
     }
    
+   
     .chinu7{
-        padding-left: 30px;
-        margin-top: 3px;
+        
+        padding-inline: 0vw;
+    
+         
     }
     .nav-menu.responsive{
         right: 0;
@@ -803,7 +811,7 @@ footer{
         backdrop-filter: blur(15px);
         width: 100%;
         min-height: 450px;
-        height: 80vh;
+        height: 90vh;
         transition: .3s;
     }
     .footer-menu   , .footer_menu_list{
@@ -812,7 +820,9 @@ footer{
      
           
     }
-
+ .top-header h1{
+    color: #00B5E7;
+ }
     .nav-name{
         color: #00B5E7;
     }
