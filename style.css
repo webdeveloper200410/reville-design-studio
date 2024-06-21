@@ -21,7 +21,7 @@
 }
 
 
-
+ 
 
 
 .damu{
@@ -116,7 +116,7 @@ a {
     translate: -50% 0;
     width: 120%;
     height: 100%;
-    background-color:  #00B5E7;;
+    background-color:  #00B5E7;
     border-radius: 0.5rem;
     opacity: 0;
     transition: opacity 250ms;
@@ -242,83 +242,102 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
+    
  
 }
 
  
 .container{
+ 
     width: 100%;
-    position: relative;
+    position:relative;
+    
 }
 
 /* ----- NAVIGATION BAR ----- */
+
+ 
+.list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+i {
+    font-size: 30px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+i:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.list-item {
+   
+    padding: .5rem;
+    position: relative;
+}
+
+.list-item::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    
+    background:white;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+}
+
+.list-item:hover::after {
+    transform: scaleX(1);
+}
+
+.chinu7{
+    margin-top: 0px;
+}
+
+ 
 nav{
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 90px;
-    line-height: 90px;
-    background: var(--body-color);
-    padding-inline: 9vw;
+    height: 75px;
+    line-height: 60px;
+    background: black;
+    padding-inline: 6vw;
     transition: .3s;
     z-index: 100;
 
     
 }
-.nav-logo{
-   position: relative;
-}
-.nav-name{
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--text-color-third);
-}
-.nav-logo span{
-    position: absolute;
-    top: -15px;
-    right: -20px;
-    font-size: 5em;
-    color: var(--text-color-second);
-}
-.nav-menu, .nav_menu_list{
-    display: flex;
-    
-}
-.nav-menu .nav_list{
-    list-style: none;
-    position: relative;
-}
+
 .nav-link{
     text-decoration: none;
-    color: var(--text-color-second);
+    color: white;
     font-weight: 500;
-    padding-inline: 15px;
-    margin-inline: 20px;
+    padding-inline: 10px;
+    margin-inline: 29px;
 }
+
+.nav-link:hover{
+    color: #00B5E7;
+}
+ 
 .nav-menu-btn{
     display: none;
 }
 .nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
+    
 }
-.active-link{
-    position: relative;
-    color: var(--first-color);
-    transition: .3;
-}
-.active-link::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translate(-50%, -50%);
-    width: 5px;
-    height: 5px;
-    background: var(--first-color);
-    border-radius: 50%;
-}
+ 
 
  
 
@@ -757,20 +776,24 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
-
-  
+@media only screen and (max-width: 800px) {
    
+  
     .nav-button{
-        display: none;  
+        display: none; 
+     
        
+    }
+   
+    .chinu7{
+        padding-left: 30px;
+        margin-top: 3px;
     }
     .nav-menu.responsive{
         right: 0;
     }
     .nav-menu{
         position: fixed;
-       
         top: 80px;
         right: -100%;
         flex-direction: column;
@@ -780,17 +803,31 @@ footer{
         backdrop-filter: blur(15px);
         width: 100%;
         min-height: 450px;
-        height: 90vh;
+        height: 80vh;
         transition: .3s;
     }
-    .nav_menu_list{
+    .footer-menu   , .footer_menu_list{
+       flex-direction: column;
+       
+     
+          
+    }
+
+    .nav-name{
+        color: #00B5E7;
+    }
+    .list{
         flex-direction: column;
     }
     .nav-menu-btn{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 160px;
+        padding-right: 100px;
+        color: white;
+        
+
+        
     }
     .featured-box{
         flex-direction: column;
@@ -803,6 +840,7 @@ footer{
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
+        
     }
     .social_icons{
         margin-top: 2em;
@@ -861,7 +899,7 @@ footer{
         width: 80%;
         height:80%;
     }
-
+ 
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
