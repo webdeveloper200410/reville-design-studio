@@ -41,6 +41,7 @@ function myMenuFunction(){
  })
 
 
+
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
  const sr = ScrollReveal({
         origin: 'top',
@@ -115,3 +116,21 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+/* ----- contact information link ----- */
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxK4VAiPFFITIYnzXF18U5PgTXm8ig1z_9bmWqO-9AE43i_MfI6pX4m4WU6hrWy1AQ/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+
+ 
