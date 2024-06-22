@@ -6,7 +6,7 @@ function myMenuFunction(){
       menuBtn.className += " responsive";
     } else {
       menuBtn.className = "nav-menu";
-    }
+    }      
   }
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
@@ -19,13 +19,13 @@ function myMenuFunction(){
 
       navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
       navHeader.style.height = "70px";
-      navHeader.style.lineHeight = "70px";
+      navHeader.style.lineHeight = "40px";
 
     } else {
 
       navHeader.style.boxShadow = "none";
-      navHeader.style.height = "90px";
-      navHeader.style.lineHeight = "90px";
+      navHeader.style.height = "75px";
+      navHeader.style.lineHeight = "48px";
 
     }
   }
@@ -33,7 +33,7 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Reville Design Studio"],
+    strings : ["Reville Design Studio."],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
