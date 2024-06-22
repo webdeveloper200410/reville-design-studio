@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="wow.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Reville Studio</title>
+    <title>Reville Design Studio</title>
 </head>    
 <body>
    <div class="container">
@@ -250,20 +250,22 @@
                 </div>
              </div>
              <div class="col">
-                <div class="form-control">
+                <form method="post"  action="https://script.google.com/macros/s/AKfycbxK4VAiPFFITIYnzXF18U5PgTXm8ig1z_9bmWqO-9AE43i_MfI6pX4m4WU6hrWy1AQ/exec" name="contact-form"> 
+                <div class="form-control" >
                     <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
+                        <input type="text" name="Name" class="input-field" placeholder="Name" required>
+                        <input type="text" name="Email" class="input-field" placeholder="Email" required>
                     </div>
                     <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
+                        <textarea name="Message" rows="5" placeholder="Message"></textarea>
                     </div>
                     <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                        <button class="btn">submit<i class="uil uil-message"></i></button>
                     </div>
                 </div>
              </div>
           </div>
+        </form>
        </section>
 
     </main>
@@ -323,5 +325,7 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="main.js"></script>
+     
+    
 </body>
 </html>
