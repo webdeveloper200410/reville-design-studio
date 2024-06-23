@@ -903,7 +903,15 @@ footer{
      
        
     }
-   
+    
+     .input-field {
+        
+        color: white;
+    }
+
+    textarea{
+        color: white;
+    }
    
     .chinu7{
         
