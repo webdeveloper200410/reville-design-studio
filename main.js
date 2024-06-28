@@ -121,9 +121,9 @@ window.addEventListener('scroll', scrollActive)
 /* ----- contact information link ----- */
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxK4VAiPFFITIYnzXF18U5PgTXm8ig1z_9bmWqO-9AE43i_MfI6pX4m4WU6hrWy1AQ/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx49WF3dDV1u_HmZmI4KW_1IlQ2w-RqUly7xbDJqNVJWD2l0hNHgkvFiUusFgJtO5OC-w/exec'
 
-const form = document.forms['contact-form']
+const form = document.forms['contact form']
 
 form.addEventListener('submit', e => {
   e.preventDefault()
