@@ -958,6 +958,8 @@ nav{
     .col{
         display: flex;
         width: 50%;
+        min-height: 20%;
+        
     }
     
     /* -- ## --- RESUABLE CSS -- ## -- */
@@ -1002,6 +1004,8 @@ nav{
         font-size: 15px;
         color: #777;
     }
+
+   
     .about-btn button{
         position: absolute;
         right: 20px;
@@ -1405,6 +1409,8 @@ nav{
     /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
     @media only screen and (max-width: 900px) {
        
+
+    
       body{
         background-color: black;
       }
@@ -1619,11 +1625,9 @@ h3{
     float: left;
     width: 30%;
 }
-.bujji{
-    position:relative;
-    
-    right: 15%;
-    top: 10%;
+
+.jk{
+    font-size: 40px;
 }
 .about-info{
     position: relative;
@@ -2045,6 +2049,26 @@ footer{
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
+
+    .kana{
+        align-items: center;
+        width: 90%;
+        
+        
+        margin-bottom: 15%;
+    }
+    
+    .jk{
+        font-size: 30px;
+    }
+    .chi{
+        color: white;
+        
+         margin-top: 20%;
+         margin-right: 0%;
+         margin-left: 0%;
+    }
+    
    
   body{
     background-color: black;
