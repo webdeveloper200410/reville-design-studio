@@ -18,6 +18,7 @@
     <title>Reville Design Studio</title>
 </head>    
 <body>
+  
    <div class="container">
     <!-- --------------- HEADER --------------- -->
       <nav id="header">
@@ -68,8 +69,11 @@
         <div class="featured-text">
            
             <div class="featured-name">
-                <span class="mohi">Welcome to <span class="typedText"></span></span>
+                <span class="mohi">Welcome to <span class="ml3">Reville Design Studio</span> 
+                 
             </div>
+
+
        
           <div class="featured-text-info">
               <span class="mohi">  
@@ -93,29 +97,64 @@
       <section class="section" id="about">
       
           <div class="top-header">
-            <h1>About Us</h1>
+            <h1>WHO WE ARE ?</h1> </div>
+           
+           <div class="manu">
+           <img class="kana" src="view-3d-businessmen-shaking-hands.jpg" alt="" width="75%"> </div>
+           
+           <div class="chi">
+           <p class="go">     Welcome to Reville Design Studio – your go-to creative hub for cutting-edge 3D modeling and animation. We are a dedicated team of digital artists, designers, and animators passionate about transforming ideas into captivating visuals. Specializing in high-quality 3D models and animations, we bring concepts to life with precision, creativity, and technical expertise.
+            <br><br>
+              At Reville Design Studio, we understand that every project is unique, and we work closely with our clients to ensure that their vision is not only met but exceeded. From architectural visualizations and product renderings to immersive animations and virtual environments, we craft detailed, photorealistic designs that engage and inspire.<br><br>
+              Our process is collaborative, ensuring that your project is handled with care from concept to final render. Whether you're looking to visualize a product, animate a scene, or build complex 3D assets, Reville Design Studio is equipped to deliver solutions that stand out.
+              Let’s bring your ideas to life, in stunning 3D.
+              </p> </div>
           </div>
+        </div>
+      <br><br> 
+          <div class="top-header">
+            <h1>WHY WE STAND OUT ?</h1></div>
           <div class="row">
            
             <div class="about-info">
-                    <h3>Our Story</h3>
-                    <p>Reville Studio was born from a passion for 3D artistry and a desire to push the boundaries of what's possible in digital modeling. Our team is dedicated to bringing your ideas to life with precision and creativity.
+                    <h3>Tailored Creativity</h3>
+                    <p>We approach every project with a fresh perspective, understanding that no two projects are the same. Our designs are not off-the-shelf; they’re tailor-made to reflect your unique vision, goals, and brand identity.
                     </p>
                  
                 </div>   <div class="col"> 
                 <div class="about-info">
-                    <h3>Our Mission</h3>
+                    <h3>Technical Precision</h3>
                     <p> 
-                      
-                        To provide top-notch 3D modeling services that exceed client expectations and drive innovation in the industry.
+                      With a keen eye for detail, we take pride in producing work that is technically flawless. From photorealistic renderings to intricate animations, we blend artistry with cutting-edge technology to create visuals that are both beautiful and functional.
                         
                     </p>
                  
                 </div>
             </div> 
+            <div class="about-info">
+              <h3>Collaboration & Communication</h3>
+              <p>Your vision is at the heart of our process. We prioritize clear and open communication, working closely with you at every stage to ensure your ideas are brought to life just as you imagined – if not better. We believe that the best work comes from collaboration.
+              </p>
            
-                 
-              
+          </div>   <div class="col"> 
+          <div class="about-info">
+              <h3>On-Time Delivery</h3>
+              <p> 
+                We understand the importance of timelines. At Reville, our commitment to meeting deadlines without sacrificing quality is one of the reasons clients trust us with their most important projects.
+                  
+              </p>
+           
+          </div>
+      </div> 
+    
+     
+      <div class="about-info">
+        <h3>Versatility</h3>
+        <p>We approach every project with a fresh perspective, understanding that no two projects are the same. Our designs are not off-the-shelf; they’re tailor-made to reflect your unique vision, goals, and brand identity.
+        </p>
+     
+    </div>            
+  </div>    
        </section>
   <!-- -------------- Services--------------- -->
  
@@ -297,7 +336,70 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="main.js"></script>
-     
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+    // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+<script>
+    // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+<script>
+    anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
     
 </body>
 </html>
