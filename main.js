@@ -32,20 +32,14 @@ function myMenuFunction(){
 
 
 /* ----- TYPING EFFECT ----- */
- var typingEffect = new Typed(".typedText",{
-    strings : ["Reville Design Studio."],
-    loop : true,
-    typeSpeed : 100, 
-    backSpeed : 80,
-    backDelay : 2000
- })
+ 
 
 
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
  const sr = ScrollReveal({
         origin: 'top',
-        distance: '80px',
+        distance: '90px',
         duration: 2000,
         reset: true     
  })
@@ -123,7 +117,7 @@ window.addEventListener('scroll', scrollActive)
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbx49WF3dDV1u_HmZmI4KW_1IlQ2w-RqUly7xbDJqNVJWD2l0hNHgkvFiUusFgJtO5OC-w/exec'
 
-const form = document.forms['contact form']
+const form = document.forms['contact form']  
 
 form.addEventListener('submit', e => {
   e.preventDefault()
