@@ -357,7 +357,7 @@ nav{
     height: 75px;
     line-height: 60px;
     background: #4A7766;
-    padding-inline: 6vw;
+    padding-inline: 5vw;
     transition: .3s;
     z-index: 100;
 
@@ -1419,10 +1419,6 @@ nav{
            
         }
        
-        p.go{
-            font-size: 14px;
-        }
-        
        
         .chinu7{
             
@@ -1596,9 +1592,10 @@ nav{
         height: 425px;
         margin: 0 15px 5px 5px;
         cursor: pointer;
-    }
+    }  
     
-   
+    width: 100%;
+    height: 3%;
 }
 
 /* -- ## --- RESUABLE CSS -- ## -- */
@@ -2037,22 +2034,11 @@ footer{
  
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px){
-    .back-video{
-        height: 100vh;
-        width: 100vw;
-        object-fit: cover;
-        position:absolute;
-        top:0;
-        left:0;
-       z-index:-999;
-    
-   }
-   
+@media only screen and (max-width: 1080px){
     p.go{
-        font-size: 14px;
+        font-size: 2px;
     }
-
+    
     .featured-text{
         padding: 0;
     }
@@ -2064,22 +2050,8 @@ footer{
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
-
-    .back-video{
-        height: 100vh;
-        width: 100vw;
-        object-fit: cover;
-        position:absolute;
-        top:0;
-        left:0;
-       z-index:-999;
-    
-   }
    
-    p.go{
-        font-size: 15px;
-    }
-
+    
     .kana{
         align-items: center;
         width: 90%;
@@ -2245,16 +2217,6 @@ footer{
 
 @media only screen and (max-width: 540px){
 
-     .back-video{
-        height: 100vh;
-        width: 100vw;
-        object-fit: cover;
-        position:absolute;
-        top:0;
-        left:0;
-       z-index:-999;
-    
-   }
     
     .featured-name{
         font-size: 40px;
