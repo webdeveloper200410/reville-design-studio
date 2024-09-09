@@ -499,6 +499,8 @@ nav{
     width: 100%;
     gap: 50px;
 }
+
+ 
 .col{
     display: flex;/* ----- POPPINS FONT Link ----- */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -1004,7 +1006,7 @@ nav{
         color: #777;
     }
 
-   
+ 
     .about-btn button{
         position: absolute;
         right: 20px;
@@ -1628,6 +1630,11 @@ h3{
 .jk{
     font-size: 40px;
 }
+
+.mom{
+    align-items: center;
+    padding-left: 10px;
+}
 .about-info{
     position: relative;
     display: flex;
@@ -2036,7 +2043,7 @@ footer{
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1080px){
     p.go{
-        font-size: 2px;
+        font-size: 17px;
     }
     
     .featured-text{
@@ -2055,8 +2062,6 @@ footer{
     .kana{
         align-items: center;
         width: 90%;
-        
-        
         margin-bottom: 15%;
     }
     
