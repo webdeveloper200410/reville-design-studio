@@ -500,7 +500,11 @@ nav{
     gap: 50px;
 }
 
- 
+ .kalki{
+    display:flex;
+    padding-left: 7%;
+    gap:50px;
+}
 .col{
     display: flex;/* ----- POPPINS FONT Link ----- */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
