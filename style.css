@@ -2047,7 +2047,7 @@ footer{
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1080px){
     p.go{
-        font-size: 17px;
+        font-size: 27px;
     }
     
     .featured-text{
@@ -2061,7 +2061,11 @@ footer{
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
-   
+    
+    p.go{
+        font-size: 25px;
+         
+    }
     
     .kana{
         align-items: center;
