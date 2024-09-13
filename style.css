@@ -185,7 +185,7 @@ a {
     position: absolute;
     z-index: 2;
     top: 50%;
-    left: 0;
+    left: 17%;
     translate: 0 -50%;
     scale: 0.75;
     border-radius: 0.5rem;
@@ -497,14 +497,17 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
     gap: 50px;
 }
 
- .kalki{
+.kalki{
     display:flex;
     padding-left: 7%;
     gap:50px;
 }
+
+ 
 .col{
     display: flex;/* ----- POPPINS FONT Link ----- */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -960,6 +963,7 @@ nav{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        
         gap: 50px;
     }
     .col{
@@ -1145,7 +1149,7 @@ nav{
         justify-content: center;
         align-items: center;
         padding: 20px 30px;
-        width: 100%;
+        width: 85%;
         height: 315px;
         background: var(--second-color);
         border-radius: 10px;
@@ -1514,6 +1518,7 @@ nav{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            
             gap: 50px;
         }
         .col{
@@ -2061,7 +2066,7 @@ footer{
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
-    
+   
     p.go{
         font-size: 25px;
          
