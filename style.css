@@ -86,6 +86,7 @@ a {
   max-width: 60rem;
   padding-inline: 1rem;
   margin-inline: auto;
+ 
 }
 .card {
   display: grid;
@@ -113,6 +114,7 @@ a {
   font-size: clamp(0.875rem, 1vw, 1rem);
   line-height: 1.2;
   color: #b8b7b8;
+   
 }
 .card-image-wrapper {
   display: none;
@@ -127,6 +129,7 @@ a {
   text-transform: uppercase;
   width: fit-content;
   height: 3.375rem;
+ 
   padding-inline: 1.6875rem;
   border: 1px solid  #00B5E7;
 }
@@ -157,7 +160,7 @@ a {
     top: 0;
     left: 50%;
     translate: -50% 0;
-    width: 120%;
+    width: 103%;
     height: 100%;
     background-color:  #00B5E7;
     border-radius: 0.5rem;
@@ -1404,7 +1407,9 @@ nav{
     
     /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
     @media only screen and (max-width: 1024px){
-        
+        p.go{
+            font-size: 26px;
+        }
         
         .featured-text{
             padding: 0;
@@ -1418,7 +1423,10 @@ nav{
     /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
     @media only screen and (max-width: 900px) {
        
-
+        p.go{
+            font-size: 26px;
+        }
+        
     
       body{
         background-color: black;
@@ -1565,7 +1573,10 @@ nav{
     
     @media only screen and (max-width: 540px){
     
-        
+        p.go{
+            font-size: 12px;
+        }
+
         .featured-name{
             font-size: 40px;
         }
@@ -1609,6 +1620,12 @@ nav{
     height: 3%;
 }
 
+@media only screen and (max-width: 425px){
+    p.go{
+        font-size: 12px;
+    }
+
+}
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-header{
     text-align: center;
