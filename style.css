@@ -158,7 +158,7 @@ a {
     position: absolute;
     z-index: -1;
     top: 0;
-    left: 50%;
+    left: 48%;
     translate: -50% 0;
     width: 103%;
     height: 100%;
@@ -312,6 +312,9 @@ body{
     list-style: none;
 }
 
+.aay{
+    padding-left: 7%;
+}
 i {
     font-size: 30px;
     transition: opacity 0.3s ease-in-out;
@@ -1408,7 +1411,7 @@ nav{
     /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
     @media only screen and (max-width: 1024px){
         p.go{
-            font-size: 26px;
+            font-size: 27px;
         }
         
         .featured-text{
@@ -2084,11 +2087,15 @@ footer{
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
    
+    
     p.go{
         font-size: 25px;
          
     }
-    
+    .card::before {
+        width: 160%;
+        
+    }
     .kana{
         align-items: center;
         width: 90%;
