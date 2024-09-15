@@ -27,7 +27,7 @@
 }
 
 p.go{
-    font-size: 14px;
+    font-size: clamp(1rem, 0,3843rem + 3,4783vw, 3rem);
 }
 
 .chi{
@@ -1410,10 +1410,7 @@ nav{
     
     /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
     @media only screen and (max-width: 1024px){
-        p.go{
-            font-size: 27px;
-        }
-        
+       
         .featured-text{
             padding: 0;
         }
@@ -1426,9 +1423,7 @@ nav{
     /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
     @media only screen and (max-width: 900px) {
        
-        p.go{
-            font-size: 26px;
-        }
+      
         
     
       body{
@@ -1576,9 +1571,7 @@ nav{
     
     @media only screen and (max-width: 540px){
     
-        p.go{
-            font-size: 12px;
-        }
+       
 
         .featured-name{
             font-size: 40px;
@@ -1623,12 +1616,7 @@ nav{
     height: 3%;
 }
 
-@media only screen and (max-width: 425px){
-    p.go{
-        font-size: 12px;
-    }
 
-}
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-header{
     text-align: center;
@@ -2071,9 +2059,7 @@ footer{
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1080px){
-    p.go{
-        font-size: 27px;
-    }
+    
     
     .featured-text{
         padding: 0;
@@ -2088,10 +2074,7 @@ footer{
 @media only screen and (max-width: 900px) {
    
     
-    p.go{
-        font-size: 25px;
-         
-    }
+    
     .card::before {
         width: 160%;
         
