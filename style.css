@@ -1517,7 +1517,7 @@ nav{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-          
+           
             backdrop-filter: blur(15px);
             width: 50%;
             min-height: 450px;
@@ -1543,7 +1543,7 @@ nav{
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-right: 70px;
+            padding-right: 10px;
             color: white;
             
     
@@ -2184,14 +2184,15 @@ footer{
     }
     .nav-menu{
         position: fixed;
-        top: 70px;
-        right: -100%;
+        top: 75px;
+       right : -50%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       
+    
         backdrop-filter: blur(15px);
-        width: 50%;
+        width: 55%;
         min-height: 450px;
         height: 18vh;
         transition: .3s;
@@ -2215,8 +2216,8 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 70px;
-        color: white;
+        padding-right: 250px;
+        color: black;
         
 
         
