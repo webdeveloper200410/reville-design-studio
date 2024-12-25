@@ -451,6 +451,7 @@ nav{
     display: none;
 }
 .nav-menu-btn i{
+    
     font-size: 28px;
     cursor: pointer;
     
@@ -911,6 +912,7 @@ nav{
     }
     
     .nav-link:hover{
+
         color: #00B5E7;
     }
      
@@ -918,6 +920,7 @@ nav{
         display: none;
     }
     .nav-menu-btn i{
+      
         font-size: 28px;
         cursor: pointer;
         
@@ -2189,7 +2192,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      
+       
     
         backdrop-filter: blur(15px);
         width: 55%;
