@@ -574,6 +574,12 @@ nav{
     gap: 50px;
 }
 
+.oye{
+    font-size: 30px;
+    justify-content: center;
+    padding-left: 12px;
+ }
+
 .kalki{
     display:flex;
     padding-left: 7%;
@@ -1029,6 +1035,9 @@ nav{
          font-size: 20px;
      }
     
+
+
+     
     /* ----- MAIN BOX ----- */
     .section{
         padding-block: 5em;
@@ -1054,9 +1063,9 @@ nav{
         margin-bottom: 5em;
     }
     .top-header h1{
-        font-weight: 600;
+        font-weight: 500;
         color: var(--text-color-second);
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .top-header span{
         color: #999;
@@ -1079,6 +1088,7 @@ nav{
         padding-block: 30px 70px;
         padding-inline: 20px;
         width: 100%;
+        
         background: var(--color-white);
         box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
         border-radius: 20px;
