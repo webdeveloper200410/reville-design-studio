@@ -911,7 +911,7 @@ backgrounds
 .mil-dark-bg:before {
     content: "";
     width: 100%;
-    height: 37%;
+    height: 36%;
     position: absolute;
     pointer-events: none;
     z-index: 2;
@@ -2645,7 +2645,7 @@ services
 .mil-service-card-sm {
     position: relative;
     display: block;
-    padding: 50px 7px;
+    padding: 50px 5px;
 }
 
 .mil-service-card-sm p {
